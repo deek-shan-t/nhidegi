@@ -1,18 +1,26 @@
-import React from "react";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Navbar from "./components/head";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import Navbar from './components/head';
+import { BrowserRouter } from 'react-router-dom';
+import Topic from './components/topic';
+import Intro from './components/intro';
+import Carousel from './components/carousel';
 
 export default function App() {
   return (
     <React.StrictMode>
-    <div></div>
       <BrowserRouter>
         <Navbar/>
+        <div className="carousel">
+        <Carousel/>
+        </div>
         <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <Intro/>
+        <br/>
+        <Topic/>
       </header>
     </div>
       </BrowserRouter>
