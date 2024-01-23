@@ -1,0 +1,32 @@
+.navbody{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    background-color: #fdc265;
+}
+
+.navlogo{
+    width: 75px;
+    height: 50px;
+    /* margin: 0 0 0 0; */
+    padding: 10px;
+    /* float: left; */
+    cursor: pointer;
+}
+
+.ul{
+    flex: 1;
+    text-align: center;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+}

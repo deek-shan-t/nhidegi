@@ -1,7 +1,7 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Navbar from './components/head';
+import Navbar from './components/navbar';
 import { BrowserRouter } from 'react-router-dom';
 import Topic from './components/topic';
 import Intro from './components/intro';
@@ -12,14 +12,13 @@ export default function App() {
     <React.StrictMode>
       <BrowserRouter>
         <Navbar/>
+        <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
         <div className="carousel">
         <Carousel/>
         </div>
-        <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Intro/>
-        <br/>
         <Topic/>
       </header>
     </div>

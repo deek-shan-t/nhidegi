@@ -6,15 +6,16 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 200px;
   pointer-events: none;
   /* position: ; */
+  margin-top: -50px;
 }
 
 
 .App-header {
   background: rgb(253,193,100);
-  background: linear-gradient(180deg, rgba(253,193,100,1) 0%, rgba(255,241,221,1) 35%, rgba(255,241,221,1) 46%);
+  background: linear-gradient(180deg, rgba(253,193,100,1) 0%, rgb(248, 225, 194) 35%, rgba(255,241,221,1) 46%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
