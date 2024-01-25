@@ -1,10 +1,11 @@
 import * as React from "react";
-import "./topic.css";
+import "./intro.css";
 
 export default function Intro() {
   return (
     <div className="intro">
-      <h1>Intro</h1>
+      <h1 className="intro_h">Intro</h1>
       <p>Intro to React Router</p>
-    </div>  );
+    </div>
+    );
 }

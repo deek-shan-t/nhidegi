@@ -15,14 +15,27 @@
 
 .App-header {
   background: rgb(253,193,100);
-  background: linear-gradient(180deg, rgba(253,193,100,1) 0%, rgb(248, 225, 194) 35%, rgba(255,241,221,1) 46%);
-  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(253,193,100,1) 0%, rgb(248, 225, 194) 35%, rgb(240, 224, 202) 46%);
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+.carousel_body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.intro{
+  width: 30%;
+}
+.carousel{
+  flex: 1;
 }
 
 .App-link {

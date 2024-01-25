@@ -1,0 +1,55 @@
+/* infobar.module.css */
+.infobody {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  background-color: #fdc265;
+  border: 2px solid black;
+}
+
+.infolinks {
+  margin: 4px 4px; /* Fix the comma to separate values */
+  padding: 4px;
+  background-color: #fdc265;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  /* Width */
+  scrollbar-width: thin;
+  scrollbar-color: red transparent;
+}
+
+.ul {
+  flex: 1;
+  text-align: center;
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+/* Width */
+.infolinks::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Handle */
+.infolinks::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.infolinks::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

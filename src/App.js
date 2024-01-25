@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Topic from './components/topic';
 import Intro from './components/intro';
 import Carousel from './components/carousel';
+import Infobar from './components/infobar';
 
 export default function App() {
   return (
@@ -15,10 +16,11 @@ export default function App() {
         <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <div className="carousel">
+        <div className="carousel_body">
+        <Intro/>
         <Carousel/>
         </div>
-        <Intro/>
+        <Infobar/>
         <Topic/>
       </header>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './carousel.css';
 
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,9 +15,9 @@ const Carousel = () => {
 
     return (
         <div className="carousel">
-            <button onClick={goToPrevSlide}>Previous</button>
+            <button class="custom-btn btn-12" onClick={goToPrevSlide}><span>Prev</span><span><pre>{'<'}</pre></span></button>
             <div className="slide">{slides[currentSlide]}</div>
-            <button onClick={goToNextSlide}>Next</button>
+            <button class="custom-btn btn-12" onClick={goToNextSlide}><span>Next</span><span><pre>{'>'}</pre></span></button>
         </div>
     );
 };
